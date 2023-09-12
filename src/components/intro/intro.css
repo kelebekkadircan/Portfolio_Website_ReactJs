@@ -1,7 +1,7 @@
 .i {
     display: flex;
     height: 100vh;
-    background-color: rgb(237, 239, 239);
+    /* background-color: rgb(237, 239, 239); */
 }
 
 .i-left {
@@ -107,4 +107,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@media screen and (max-width: 480px) {
+    .i {
+
+        flex-direction: column;
+
+    }
+
+    .i-left-wrapper {
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .i-desc {
+        display: none;
+    }
 }
